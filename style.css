@@ -1,0 +1,91 @@
+.wr-flowers {
+	position: relative;
+	margin: 50px auto 0;
+	width: 800px;
+	height: 500px;
+	border: 1px solid #000;
+	overflow: hidden;
+}
+.flower{
+	position: absolute;
+	top: 250px;
+	left: 400px;
+	width: 50px;
+	height: 50px;
+	animation: 1s disappear-4 1 linear forwards;
+}
+@keyframes disappear-1 {
+	50% {
+		transform: translate(-10px, 25px) scale(2) rotate(135deg); 
+	}
+	100% {
+		transform: translate(-20px, 50px) scale(0) rotate(270deg); 
+	}
+}
+@keyframes disappear-2 {
+	50% {
+		transform: translate(10px, -25px) scale(2) rotate(-135deg); 
+	}
+	100% {
+		transform: translate(20px, -50px) scale(0) rotate(-270deg); 
+	}
+}
+@keyframes disappear-3 {
+	50% {
+		transform: rotate(-135deg) translate(-10px, 25px) scale(2); 
+	}
+	100% {
+		transform: rotate(-270deg) translate(-20px, 50px) scale(0);  
+	}
+}
+@keyframes disappear-4 {
+	50% {
+		transform: rotate(135deg) translate(10px, -25px) scale(2); 
+	}
+	100% {
+		transform: rotate(270deg) translate(20px, -50px) scale(0);  
+	}
+}
+
+.panel {
+	position: fixed;
+	top: 20px;
+	left: 30px;
+	width: 200px;
+	overflow: hidden;
+	padding: 25px 0 5px 25px;
+	border-radius: 5px;
+	border: 1px solid #000;
+}
+.panel:before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	border: 1px solid #000;
+}
+.panel label, .panel input {
+	display: block;
+}
+.panel input {
+	margin-bottom: 25px;
+	width: 90%;
+	outline: none;
+	border: 1px solid transparent;
+	border-bottom-color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
